@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: 10px;
+}
+
+body.dark {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+}
+
+button {
+    background-color: white;
+    color: black;
+}
+
+body.dark button {
+    background-color: black;
+    color: white;
+}
+
+button.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-image: url('Sun.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+body.dark button.theme-toggle:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('Sun.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
